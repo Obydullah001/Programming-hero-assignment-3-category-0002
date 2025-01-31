@@ -17,7 +17,8 @@
         extend: {
           colors: {
             clifford: ' #da373d',
-            register-Work: ' #179800', 
+            'register-Work': '#179800', 
+            'service-type': '#EFEBE3'
           }
         }
       }
@@ -47,18 +48,19 @@
   </style>
 </head>
 <body class="sora-font">
-    <header>
+    <header class="max-w-screen-2xl mx-auto md:px-16 lg:px-28 ">
         <!-- navbar related style -->
-      <nav class="navbar justify-between lg:flex">
+      <nav class="navbar  justify-between mx-auto lg:flex sm:px-auto border border-green-500 md:border-0 lg:border-0 ">
         <!-- logo div -->
        <div class="navbar-start">
-        <img src="./images/logo-header.png" alt="">
+        <div><img class="md:hidden lg:hidden" src="./images/logo.png" alt=""></div>
+        <img class="hidden md:flex lg:flex" src="./images/logo-header.png" alt="">
        </div>
        <!-- navbar center -->
         <div class="navbar-center hidden md:flex lg:flex px-1 ">
-          <ul class="hidden md:flex lg:flex items-center ">
+          <ul class="hidden md:flex lg:flex-initial items-center ">
             <li><a class="mr-8" href="">Product</a></li>
-            <li><a class="mr-8 href="">Services</a></li>
+            <li><a class="mr-8">Services</a></li>
             <li><a class="mr-8" href="">Contact us</a></li>
           </ul>
         </div>
@@ -68,8 +70,8 @@
             <li><a class="mr-6" href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
             <li><a class=" mr-6 " href=""><i class="fa-solid fa-cart-shopping"></i>
             </a></li>
-            <li><a class="btn mr-6">Login</a></li>
-            <li><a class="btn !bg-register-Work">Register</a></li>
+            <li><a class="btn py-2 px-8  bg-white border-green-700 border-2 mr-6 ">Login</a></li>
+            <li><a class="btn !bg-register-Work text-white py-2 px-8 bg-[#179800]">Register</a></li>
           </ul>
             <div class="flex-none ">
               <button class="btn btn-square btn-ghost md:hidden lg:hidden">
@@ -89,8 +91,58 @@
           
          </div>
       </nav>
+      <!--banner section  -->
+      <div class="bg-gradient-to-b from-white to-[#EFEBE3] ...">
+        <!-- heading section -->
+         <div class="justify-center m-auto w-10/12 md:w-full lg:w-full">
+          <h1 class="text-[3.5rem] font-semibold text-center my-8">Freshness <span class="text-register-Work">You Can <br> Count</span> On, Prices You’ll Love!</h1>
+          <div class="text-center">
+            <p class="text-[1.25rem]">
+              Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!
+            </p>
+          </div>
+         </div>
+         <!-- image section -->
+          <div class=" ">
+            <img class="justify-center mx-auto lg:max-w-2xl" src="./images/hero-vegetables.png" alt="">
+          </div>
+      </div>
     </header>
-    <main>
+    <main class="mx-auto max-w-full lg:px-32">
+      <!-- services Section -->
+       <div>
+        <h1 class="register-Work">Services</h1>
+        <!-- services card -->
+         <div class="grid grid-cols-1 p-8 lg:grid-cols-3">
+          <!-- card-1 -->
+           <div class="bg-service-type rounded-2xl text-center">
+            <!-- service image -->
+            <div>
+              <img class="bg-white justify-center" src="./images/service.png" alt="">
+            </div>
+            <h1 class="text-2xl font-semibold ">24/7 Services </h1>
+            <p class="font-light text-xl">Our 24/7 service ensures reliability, convenience, and support anytime whenever you need it most.</p>
+           </div>
+           <!-- card-2 -->
+           <div class="bg-service-type rounded-2xl text-center">
+            <!-- delivary image -->
+             <div>
+              <img class="bg-white justify-center" src="./images/delivery.png" alt="">
+            </div>
+            <h1 class="text-2xl font-semibold ">Fast Delivery </h1>
+            <p class="font-light text-xl">Our 24/7 service ensures reliability, convenience, and support anytime whenever you need it most.</p>
+           </div>
+            <!-- card-3 -->
+            <div class="bg-service-type rounded-2xl text-center">
+              <!-- healthy image -->
+              <div>
+                <img class="bg-white justify-center" src="./images/healthy.png" alt="">
+              </div>
+              <h1 class="text-2xl font-semibold ">Healthy Products </h1>
+              <p class="font-light text-xl">Our 24/7 service ensures reliability, convenience, and support anytime whenever you need it most.</p>
+             </div>
+         </div>
+       </div>
     </main>
     <footer>
 
