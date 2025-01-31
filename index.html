@@ -1,19 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
-</head>
-<body>
-    <header>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: ' #da373d',
+            register-Work: ' #179800', 
+          }
+        }
+      }
+    }
+  </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+<style>
+.sora-font {
+    font-family: "Sora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .adlam-display-font {
+  font-family: "ADLaM Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.poppins-regular-font {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+  </style>
+</head>
+<body class="sora-font">
+    <header>
+        <!-- navbar related style -->
+      <nav class="navbar justify-between lg:flex">
+        <!-- logo div -->
+       <div class="navbar-start">
+        <img src="./images/logo-header.png" alt="">
+       </div>
+       <!-- navbar center -->
+        <div class="navbar-center hidden md:flex lg:flex px-1 ">
+          <ul class="hidden md:flex lg:flex items-center ">
+            <li><a class="mr-8" href="">Product</a></li>
+            <li><a class="mr-8 href="">Services</a></li>
+            <li><a class="mr-8" href="">Contact us</a></li>
+          </ul>
+        </div>
+        <!-- nav bar end -->
+         <div class="navbar-end ">
+          <ul class="hidden md:flex lg:flex items-center my-10">
+            <li><a class="mr-6" href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li><a class=" mr-6 " href=""><i class="fa-solid fa-cart-shopping"></i>
+            </a></li>
+            <li><a class="btn mr-6">Login</a></li>
+            <li><a class="btn !bg-register-Work">Register</a></li>
+          </ul>
+            <div class="flex-none ">
+              <button class="btn btn-square btn-ghost md:hidden lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  class="inline-block h-5 w-5 stroke-current">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </button>
+            </div>
+          
+         </div>
+      </nav>
     </header>
     <main>
-
     </main>
     <footer>
-        
+
     </footer>
 </body>
 </html>
